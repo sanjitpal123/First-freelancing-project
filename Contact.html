@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="bg-white shadow p-5 fixed top-[0] z-[1] box-border w-screen lg:flex lg:justify-between"
+    >
+      <div class="flex justify-between items-center sm:px-[20px]">
+        <span> <img src="logo.png" class="w-[100px]" /></span>
+        <span class="text-3xl cursor-pointer lg:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="flex flex-col justify-center sm:px-[20px] items-center gap:-[30px] lg:flex lg:flex-row lg:items-center lg:justify-center lg:z-auto lg:static absolute bg-white w-full left-[0] lg:w-auto lg:py-0 lg:py-8 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all case-in duration-500"
+      >
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+        >
+          <li>Home</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/About.html"
+          class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+        >
+          <li>About Us</li>
+        </a>
+        <a
+          href="#"
+          class="text-xl hover:text-[#bd186e] py-[10px] font-bold lg:py-[0px] font-bold mx-4 md:my-0"
+        >
+          <li>Projects</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/Service-section.html"
+          class="text-xl hover:text-[#bd186e] text-bold py-[10px] font-bold lg:py-[0px] mx-4 md:my-0"
+        >
+          <li>Services</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/career.html"
+          class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0 md:my-0"
+        >
+          <li>Careers</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/Contact.html"
+          class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0"
+        >
+          <li>Contact Us</li>
+        </a>
+        <a href="http://127.0.0.1:5500/Contact.html">
+          <button
+            class="h-[40px] w-[140px] text-white bg-[#bd186e] font-[Poppins] rounded px-4 py-2 my-[10px]"
+          >
+            Get Ready
+          </button></a
+        >
+      </ul>
+    </nav>
+
+    <!--nav second start from here-->
+    <div
+      class="w-full h-[130px] bg-black text-white border-b-4 mt-[150px] border-grey-700 relative"
+    >
+      <div
+        class="w-[200px] py-4 top-1 h-[100%] border-b-4 border-pink-700 absolute ml-9"
+      >
+        <p class="text-xs text-blue-500 ml-[37px]">
+          <a href="http://127.0.0.1:5500/index.html">HOME</a>
+          <span class="mx-3 text-white">|</span
+          ><span class="text-white">Contact Us</span>
+        </p>
+        <p class="text-3xl mt-3 ml-[37px]">Contact Us</p>
+      </div>
+    </div>
+
+    <!--Get IN Touch section start from here-->
+
+    <div
+      class="w-[100%] md:flex md:justify-center md:items-center gap-[20px] p-3 2xl:w-[68%] 2xl:flex 2xl:justify-between 2xl:p-2 2xl:mt-6 2xl:items-center 2xl:ml-[300px]"
+    >
+      <div
+        class="w-[100%] md:w-[40%] text-center mb-6 2xl:w-[40%] 2xl:text-start"
+      >
+        <h1 class="text-3xl mb-2">Get in touch!!</h1>
+        <p class="text-lg mb-2">
+          You can use social media to contact us or submit the form below
+        </p>
+        <div
+          class="w-[100%] flex items-center justify-center gap-[15px] flex-wrap 2xl:flex 2xl: 2xl:justify-start 2xl:items-center"
+        >
+          <div class="w-[60px] h-[60px] bg-pink-600">
+            <i
+              class="text-xl pt-3 text-white pl-2 2xl:pl-5 fa-brands fa-facebook"
+            ></i>
+          </div>
+          <div class="w-[60px] h-[60px] bg-pink-600">
+            <i
+              class="text-xl pt-3 text-white 2xl:pl-5 fa-brands fa-twitter"
+            ></i>
+          </div>
+          <div class="w-[60px] h-[60px] bg-pink-600">
+            <i
+              class="text-xl pt-3 text-white 2xl:pl-5 fa-brands fa-youtube"
+            ></i>
+          </div>
+          <div class="w-[60px] h-[60px] bg-pink-600">
+            <i
+              class="text-xl pt-3 text-white 2xl:pl-5 fa-brands fa-instagram"
+            ></i>
+          </div>
+          <div class="w-[60px] h-[60px] bg-pink-600">
+            <i
+              class="text-xl pt-3 text-white 2xl:pl-5 fa-brands fa-pinterest"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[100%] md:w-[50%] flex justify-center items-start gap-[15px] 2xl:w-[45%] flex-wrap"
+      >
+        <div class="w-[200px] md:w-[30%] text-center">
+          <div class="w-[100%] flex items-center justify-center">
+            <div class="bg-pink-500 w-[60px] h-[60px] rounded-full">
+              <i class="text-2xl pt-3 text-white fa-solid fa-address-book"></i>
+            </div>
+          </div>
+          <h1>Address:</h1>
+          <p>
+            403,4th Floor,Rivaansh Ikon,Baner Pan Card Club Road,Pune,
+            Maharashtra-411045
+          </p>
+        </div>
+        <div class="w-[150px] md:w-[30%] text-center">
+          <div class="w-[100%] flex items-center justify-center">
+            <div class="bg-pink-500 w-[60px] h-[60px] rounded-full">
+              <i class="text-2xl pt-3 text-white fa-brands fa-telegram"></i>
+            </div>
+          </div>
+          <h1>Email us:</h1>
+          <p>jcbalabuildcon</p>
+        </div>
+        <div class="w-[200px] md:w-[30%] text-center">
+          <div class="w-[100%] flex items-center justify-center">
+            <div class="bg-pink-500 w-[60px] h-[60px] rounded-full">
+              <i class="text-2xl pt-3 text-white fa-solid fa-phone"></i>
+            </div>
+          </div>
+          <h1>Phone No:</h1>
+          <p>Mob: +91-9146201188</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Get In Touch end here-->
+    <div>
+      <div
+        class="2xl:w-[68%] w-[95%] mx-[10px] md:w-[95%] flex-wrap md:flex-nowrap flex gap-[10px] md:mx-[20px] pt-[20px] 2xl:ml-[280px]"
+      >
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="md:w-[50%] sm:h-[50px] w-[100%] border-4 h-[50px]"
+        />
+
+        <input
+          type="text"
+          placeholder="Your Location"
+          class="w-[100%] md:w-[50%] border-4 h-[50px]"
+        />
+      </div>
+
+      <div
+        class="2xl:w-[68%] w-[95%] sm:w-[95%] flex-wrap md:flex-nowrap mx-[10px] 2xl:ml-[100px] md:mx-[20px] flex gap-[10px] 2xl:ml-[280px] pt-[20px]"
+      >
+        <input
+          type="text"
+          placeholder="Your Email"
+          class="md:w-[50%] sm:h-[50px] w-[100%] border-4 sm:h-[50px] h-[50px]"
+        />
+
+        <input
+          type="text"
+          placeholder="Your Phone"
+          class="md:w-[50%] sm:h-[50px] w-[100%] sm:h-[50px] border-4 h-[50px]"
+        />
+      </div>
+      <div>
+        <div class="2xl:w-[68%] w-[100%] xl:w-[95%] 2xl:ml[280px]">
+          <textarea
+            id="myTextArea"
+            rows="4"
+            class="border-4 2xl:ml-[280px] mt-[20px] w-[95%] mx-[10px] col-span-full md:w-[95%] md:mx-[20px] xl:w-[100%]"
+          >
+                Enter your text here...
+            </textarea
+          >
+        </div>
+      </div>
+      <button
+        class="2xl:w-[68%] w-[95%] lg:w-[90%] lg:ml-[50px] md:ml-[20px] xl:ml-[50px] xl:w-[90%] 2xl:ml-[280px] bg-[#bd186e] h-[40px] text-white mt-[10px] mb-[10px] mx-[10px]"
+      >
+        Submit
+      </button>
+    </div>
+
+    <div
+      class="bg-slate-700 w-full h-50% p-8 sm:flex sm:justify-between sm:flex-wrap box-border"
+    >
+      <div
+        class="h-84 w-[100%] sm:w-[23%] flex justify-center align-center flex-col text-white mb-4"
+      >
+        <div
+          class="w-full h-full flex justify-center align-center sm:flex sm:justify-start"
+        >
+          <img src="logo.png" class="w-24 h-28" alt="" />
+        </div>
+        <div class="sm:text-left text-center">
+          <p class="my-3">
+            jay chand bala excels in construction with timely, substainable
+            projects.Their skilled team ensure customer satisfaction through
+            transparent communication, making them industry-trusted
+          </p>
+        </div>
+        <div
+          class="w-full h-full flex justify-center align-center gap-2 sm:flex sm:justify-start"
+        >
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-whatsapp w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="w-[100%] sm:w-[20%] h-[280px] text-white p-4">
+        <h1 class="text-lg">Quicklinks</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="http://127.0.0.1:5500/index.html"><p>Home</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/About.html"> <p>About-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Contact.html"> <p>Contact-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Service-section.html"><p>Services</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[20%] h-[260px] text-white p-4">
+        <h1 class="text-lg">Company</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="#"> <p>Privacy Policy</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/career.html"> <p>Careers</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+
+        <a href="#"> <p>Projects</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[25%] h-[340px] text-white p-4">
+        <h1 class="text-lg">Contact Details</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p class="my-3">
+          Phone/ WhatsApp: +91-9146201188 <br />
+          Email: info@jcbalabuildcon.com Address: 403,4th Floor,Rivaansh Ikon
+          ,Baner Pan Card Club Road,Pune <br />, Maharashtra-411045
+        </p>
+        <input
+          type="text"
+          class="p-1 w-[100%] sm:w-[50%] sm:inline"
+          placeholder="Email"
+        />
+        <button
+          class="w-[100%] sm:w-8 sm:inline h-8 bg-pink-600 text-white my-2"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[130px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[130px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

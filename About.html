@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="bg-white shadow p-5 fixed top-[0] box-border w-screen z-[1] lg:flex lg:justify-between"
+    >
+      <div class="flex justify-between items-center px-[20px]">
+        <span> <img src="logo.png" class="w-[100px]" /></span>
+        <span class="text-3xl cursor-pointer lg:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="flex flex-col justify-center px-[20px] items-center gap:-[30px] lg:flex lg:flex-row lg:items-center lg:justify-center lg:z-auto lg:static absolute bg-white w-full left-[0] lg:w-auto lg:py-0 lg:py-8 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all case-in duration-500"
+      >
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+        >
+          <li>Home</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/About.html"
+          class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+        >
+          <li>About Us</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/Project.html"
+          class="text-xl hover:text-[#bd186e] py-[10px] font-bold lg:py-[0px] font-bold mx-4 md:my-0"
+        >
+          <li>Projects</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/Service-section.html"
+          class="text-xl hover:text-[#bd186e] text-bold py-[10px] font-bold lg:py-[0px] mx-4 md:my-0"
+        >
+          <li>Services</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/career.html"
+          class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0 md:my-0"
+        >
+          <li>Careers</li>
+        </a>
+        <a
+          href="http://127.0.0.1:5500/Contact.html"
+          class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0"
+        >
+          <li>Contact Us</li>
+        </a>
+        <a href="http://127.0.0.1:5500/Contact.html">
+          <button
+            class="h-[40px] w-[140px] text-white bg-[#bd186e] font-[Poppins] rounded px-4 py-2 my-[10px]"
+          >
+            Get Ready
+          </button></a
+        >
+      </ul>
+    </nav>
+
+    <!-- nav first start here -->
+    <div
+      class="w-[100%] bg-[#bd186e] h-[50px] mt-[100px] sm:flex sm:items-center sm:justify-around hidden sm:block"
+    >
+      <div class="w-[40%] h-[100%] flex gap-[30px] items-center text-white">
+        <a href="tel:+919146201188">
+          <i class="fa-solid fa-phone"></i> +91-9146201188</a
+        >
+        <a href="mailto:info@jcbalabuildcon.com">
+          <i class="fa-solid fa-envelope"></i> info@jcbalabuildcon.com</a
+        >
+      </div>
+      <div class="flex gap-[10px]">
+        <div
+          class="h-[30px] w-[30px] bg-[#1877F2] flex items-center justify-center text-white"
+        >
+          <i class="fa-brands fa-facebook text-2xl"></i>
+        </div>
+        <div
+          class="h-[30px] w-[30px] bg-[#1877F2] flex items-center justify-center text-white"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div
+          class="h-[30px] w-[30px] bg-[#0099B9] flex items-center justify-center text-white"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div
+          class="h-[30px] w-[30px] bg-[#1877F2] flex items-center justify-center text-white"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+          
+    </div>
+    <!-- nav first ends here -->
+
+    <!-- navigation bar end here -->
+    <!-- About header start here -->
+
+    <div
+      class="w-full h-[130px] bg-black text-white border-b-4 border-grey-700 relative"
+    >
+      <div
+        class="w-[200px] py-4 top-1 h-[100%] border-b-4 border-pink-700 absolute ml-9"
+      >
+        <p class="text-xs text-blue-500 ml-[37px]">
+          <a href="http://127.0.0.1:5500/index.html">HOME</a>
+          <span class="mx-3 text-white">|</span
+          ><span class="text-white">ABOUT US</span>
+        </p>
+        <p class="text-3xl mt-3 ml-[37px]">About US</p>
+      </div>
+    </div>
+    <!-- about header end here -->
+    <!-- About info start here -->
+    <div>
+      <div class="p-8 w-[100%] flex justify-center">
+        <div class="sm:w-[70%] w-[100%]">
+          <p class="text-1xl">
+            Jay chand bala is the official website of Jay Chand Bala (JCB)
+            Building Construction, a renowned company in the construction
+            industry. The website serves as a platform to showcase their
+            expertise, services, and project portfolio.
+          </p>
+          <p class="mt-4">
+            At Jay chand bala, visitors can explore a comprehensive range of
+            construction services provided by the company. Whether it’s
+            residential, commercial, or retail construction, JCB offers a wide
+            array of services including architectural design, construction
+            management, interior design, renovation, and project consulting. The
+            website provides detailed information about each service,
+            highlighting the company’s commitment to delivering high-quality
+            projects.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full flex flex-col lg:flex-row lg:justify-center lg:align-center lg:p-[30px]"
+      >
+        <div class="w-[80%] flex flex-wrap">
+          <div
+            class="w-full flex justify-center items-center gap-[25px] my-5 lg:w-[30%] hover:shadow-xl py-[20px] my-[20px] transition-shadow"
+          >
+            <div>
+              <i class="text-2xl fa-solid fa-house"></i>
+            </div>
+            <div class="w-[70%]">
+              <h2 class="text-lg font-bold">Work with on The Market</h2>
+              <p class="text-gray-500">
+                With years of experience in the construction industry, Balainfra
+                Building Construction has amassed a wealth of knowledge and
+                expertise.
+              </p>
+              <a href="" class="text-pink-700 font-semibold mt-4"
+                >Read more <span>>></span></a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-center items-center gap-[25px] my-5 lg:w-[30%] hover:shadow-xl py-[20px] my-[20px] transition-shadow"
+          >
+            <div>
+              <i class="text-2xl fa-solid fa-house"></i>
+            </div>
+            <div class="w-[70%]">
+              <h2 class="text-lg font-bold pt-[-10px] pb-[15px]">
+                Planning and Designing
+              </h2>
+              <p class="text-gray-500">
+                We take immense pride in our commitment to delivering projects
+                of the highest quality to exceeds expectations.
+              </p>
+              <a href="" class="text-pink-700 font-semibold mt-4"
+                >Read more <span>>></span></a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-center items-center gap-[25px] my-5 lg:w-[30%] hover:shadow-xl py-[20px] my-[20px] transition-shadow"
+          >
+            <div>
+              <i class="text-2xl fa-solid fa-house"></i>
+            </div>
+            <div class="w-[70%]">
+              <h2 class="text-lg font-bold">Joining Reconstruction</h2>
+              <p class="text-gray-500">
+                We offer a full spectrum of construction services, from
+                architectural design to construction management, interior
+                design, renovation, and project consulting..
+              </p>
+              <a href="" class="text-pink-700 font-semibold mt-4"
+                >Read more <span>>></span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about info ends here -->
+
+    <!-- image section intro start here -->
+    <div
+      class="w-full flex flex-col px-[25px] md:pl-[100px] lg:pl-[0px] py-[55px] bg-pink-700 gap-[20px] md:w-full md:flex-row lg:justify-center md:items-center md:gap-[25px]"
+    >
+      <div
+        class="w-[100%] md:w-[25%] hover:transform hover:scale-90 transition-transform ease-in-out duration-300"
+      >
+        <img src="image9.jpg" alt="" />
+      </div>
+      <div
+        class="w-[100%] md:w-[25%] hover:transform hover:scale-90 transition-transform ease-in-out duration-300"
+      >
+        <img src="image10.jpg" alt="" />
+      </div>
+      <div
+        class="w-[100%] md:w-[25%] hover:transform hover:scale-90 transition-transform ease-in-out duration-300"
+      >
+        <img src="image11.jpg" alt="" />
+      </div>
+    </div>
+
+    <!--above the review section start from here -->
+    <div class="w-full p-[20px] flex justify-center">
+      <div class="sm:w-[70%] w-[90%]">
+        <p class="mb-4">
+          Welcome to the official website of Jay Chand Bala (JCB) Building
+          Construction, a distinguished name in the construction industry. Our
+          platform is designed to offer visitors a comprehensive insight into
+          our unparalleled expertise, a diverse spectrum of services, and an
+          impressive project portfolio that reflects our commitment to
+          excellence.
+        </p>
+        <p class="mb-4">
+          At JCB, we take pride in delivering top-notch construction services
+          across various sectors, including residential, commercial, and retail
+          projects. With a reputation for excellence, we are dedicated to
+          providing a range of services that cater to the unique needs of our
+          clients. Whether it’s architectural design, construction management,
+          interior design, renovation, or project consulting, we offer a
+          complete suite of solutions that embody quality and precision.
+        </p>
+        <p class="mb-4">
+          Our website serves as a gateway for visitors to explore the
+          intricacies of each service we provide. From detailed descriptions to
+          informative content, we aim to showcase the depth of our industry
+          knowledge and the dedication we bring to every project. Architectural
+          design is not just a service we offer; it’s a testament to our
+          commitment to innovative and aesthetically pleasing structures.
+          Construction management is not just a task; it’s a meticulous process
+          ensuring the seamless execution of projects. Interior design is not
+          just an add-on; it’s a transformative element that enhances the
+          overall experience.
+        </p>
+        <p class="mb-4">
+          Renovation is not just about making changes; it’s about revitalizing
+          spaces to meet contemporary standards. Project consulting is not just
+          a service; it’s a collaborative approach that leverages our expertise
+          to guide clients through every phase of their construction journey.
+        </p>
+        <p class="mb-4">
+          Explore our project portfolio to witness the tangible results of our
+          dedication to delivering high-quality projects. At JCB Building
+          Construction, we are not just builders; we are creators of spaces that
+          inspire and endure. Thank you for visiting our official website – your
+          gateway to the world of construction excellence.
+        </p>
+
+        <div
+          class="w-full p-1 flex justify-between items-center gap-[20px] flex-wrap lg:flex-row lg:w-full my-3"
+        >
+          <div class="w-[40%] text-center lg:w-[22%]">
+            <p class="font-bold sm:text-4xl md:font-extrabold">10+</p>
+            <p class="text-xs mt-1">Bussiness Years</p>
+          </div>
+          <div class="w-[40%] text-center lg:w-[22%]">
+            <p class="font-bold sm:text-4xl md:font-extrabold">240+</p>
+            <p class="text-xs mt-1">Satisfied Years</p>
+          </div>
+          <div class="w-[40%] text-center lg:w-[22%]">
+            <p class="font-bold sm:text-4xl md:font-extrabold">2000+</p>
+            <p class="text-xs mt-1">Successfull Cases</p>
+          </div>
+          <div class="w-[40%] text-center lg:w-[22%]">
+            <p class="font-bold sm:text-4xl md:font-extrabold">130+</p>
+            <p class="text-xs mt-1">Pro Consultants</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- image section intro ends here -->
+
+    <!--Review section start from here-->
+    <div class="w-[100%] mb-[30px] overflow-hidden">
+      <div class="sm:w-[60%] w-[100%] flex justify-center mb-[20px]">
+        <div>
+          <p class="text-[#FF3F00] font-bold px-[10px]">WHAT THEY SAY</p>
+          <h2 class="sm:text-2xl font-bold text-1xl px-[10px]">
+            Google My Business Reviews
+          </h2>
+        </div>
+      </div>
+      <div class="w-[100%] flex justify-center">
+        <div
+          class="lg:w-[95%] 2xl:w-[80%] w-[100%] flex lg:gap-[100px] gap-[30px] flex-wrap justify-center"
+        >
+          <div
+            class="sm:w-[20%] 2xl:w-[10%] w-[100%] flex justify-center mb-[-80px] sm:mb-[-0px]"
+          >
+            <div>
+              <div>
+                <img src="image14.jpg" class="w-[50px] h-[50px] rounded-full" />
+              </div>
+              <div class="ml-[10px] sm:w-[200px] mb-[10px] w-[100%]">
+                <span class="font-bold">J C Bala Buildcon</span>
+                <div class="flex items-center">
+                  <div class="flex items-center">
+                    <span class="font-bold text-2xl mr-[3px] text-[#FFD700]"
+                      >5.0</span
+                    >
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-[#555 ] font-medium mt-[5px] mb-[4px]">
+                    Based on 6 reviews
+                  </p>
+                  <span><img src="image26.jpg" class="w-[150px]" /></span>
+                  <button
+                    class="bg-blue-700 px-[10px] mt-[10px] rounded-xl text-white"
+                  >
+                    <a href="#"
+                      >Review us on
+                      <img
+                        src="Google_Icons-09-512.webp"
+                        class="h-[30px] inline"
+                    /></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Slider start from here-->
+          <div
+            class="sm:w-[60%] z-[-1] pt-[50px] sm:pt-[0px] 2xl:w-[60%] w-[97%]"
+          >
+            <div class="swiper mySwiper2 w-[100%] pb-[30px] h-[100%]">
+              <div class="swiper-wrapper flex">
+                <div
+                  class="swiper-slide w-[30%] pb-[20px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100"
+                >
+                  <div
+                    class="flex justify-between gap-[10px] ml-[20px] mt-[30px]"
+                  >
+                    <div class="flex gap-[10px]">
+                      <img
+                        src="image22.jpg"
+                        class="w-[60px] h-[60px] pt-[30p]"
+                      />
+                      <a href="#" class="font-bold">Jaychand Bala</a>
+                    </div>
+                    <div>
+                      <img
+                        src="Google_Icons-09-512.webp"
+                        class="w-[30px] h-[30px] mt-[-20px]"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-[100px] mt-[-30px]">
+                    <p>6 months ago</p>
+                  </div>
+                  <div class="star ml-[40px] mt-[20px]">
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide w-[30%] pb-[20px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100"
+                >
+                  <div
+                    class="flex justify-between gap-[10px] ml-[20px] mt-[30px]"
+                  >
+                    <div class="flex gap-[20px]">
+                      <img
+                        src="image21.jpg"
+                        class="w-[60px] h-[60px] pt-[30p]"
+                      />
+                      <a href="#" class="font-bold">Sanjit Pal</a>
+                    </div>
+                    <div>
+                      <img
+                        src="Google_Icons-09-512.webp"
+                        class="w-[30px] h-[30px] mt-[-20px]"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-[100px] mt-[-30px]">
+                    <p>9 months ago</p>
+                  </div>
+                  <div class="star ml-[40px] mt-[20px]">
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                  <div class="w-[80%] ml-[30px]">
+                    <p>
+                      this company are working on more project which in running
+                      in mharastra & other state.This Company have good work
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide w-[30%] pb-[20px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100"
+                >
+                  <div
+                    class="flex justify-between gap-[10px] ml-[20px] mt-[30px]"
+                  >
+                    <div class="flex gap-[20px]">
+                      <img
+                        src="image20.jpg"
+                        class="w-[60px] h-[60px] pt-[30p]"
+                      />
+                      <a href="#" class="font-bold">Srijal Pal</a>
+                    </div>
+                    <div>
+                      <img
+                        src="Google_Icons-09-512.webp"
+                        class="w-[30px] h-[30px] mt-[-20px]"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-[100px] mt-[-30px]">
+                    <p>8 months ago</p>
+                  </div>
+                  <div class="star ml-[40px] mt-[20px]">
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide w-[20%] pb-[20px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100"
+                >
+                  <div
+                    class="flex justify-between gap-[10px] ml-[20px] mt-[30px]"
+                  >
+                    <div class="flex gap-[10px]">
+                      <img
+                        src="image19.jpg"
+                        class="w-[60px] h-[60px] pt-[30p]"
+                      />
+                      <a href="#" class="font-bold">Ajay Biswas</a>
+                    </div>
+                    <div>
+                      <img
+                        src="Google_Icons-09-512.webp"
+                        class="w-[30px] h-[30px] mt-[-20px]"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-[100px] mt-[-30px]">
+                    <p>11 months ago</p>
+                  </div>
+                  <div class="star ml-[40px] mt-[20px]">
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                  <div class="w-[80%] ml-[30px]">
+                    <p>
+                      Many more projects are going on all over maharashtra &
+                      other state.. nice company.. professional staff..good
+                      management
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide w-[30%] pb-[20px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100"
+                >
+                  <div
+                    class="flex justify-between gap-[10px] ml-[20px] mt-[30px]"
+                  >
+                    <div class="flex gap-[10px]">
+                      <img
+                        src="image21.jpg"
+                        class="w-[60px] h-[60px] pt-[30p]"
+                      />
+                      <a href="#" class="font-bold">Rajesh Kumar</a>
+                    </div>
+
+                    <img
+                      src="Google_Icons-09-512.webp"
+                      class="w-[30px] h-[30px] mt-[-20px]"
+                    />
+                  </div>
+                  <div class="ml-[100px] mt-[-30px]">
+                    <p>8 months ago</p>
+                  </div>
+                  <div class="star ml-[40px] mt-[20px]">
+                    <span
+                      ><i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                      <i class="fa-solid fa-star text-[#FFD700]"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start here -->
+
+    <div
+      class="bg-slate-700 w-full h-50% p-8 sm:flex sm:justify-between sm:flex-wrap box-border"
+    >
+      <div
+        class="h-84 w-[100%] sm:w-[23%] flex justify-center align-center flex-col text-white mb-4"
+      >
+        <div
+          class="w-full h-full flex justify-center align-center sm:flex sm:justify-start"
+        >
+          <img src="logo.png" class="w-24 h-28" alt="" />
+        </div>
+        <div class="sm:text-left text-center">
+          <p class="my-3">
+            jay chand bala excels in construction with timely, substainable
+            projects.Their skilled team ensure customer satisfaction through
+            transparent communication, making them industry-trusted
+          </p>
+        </div>
+        <div
+          class="w-full h-full flex justify-center align-center gap-2 sm:flex sm:justify-start"
+        >
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-whatsapp w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="w-[100%] sm:w-[20%] h-[280px] text-white p-4">
+        <h1 class="text-lg">Quicklinks</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="http://127.0.0.1:5500/index.html"><p>Home</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/About.html"> <p>About-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Contact.html"> <p>Contact-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Service-section.html"><p>Services</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[20%] h-[260px] text-white p-4">
+        <h1 class="text-lg">Company</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="#"> <p>Privacy Policy</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/career.html"> <p>Careers</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+
+        <a href="http://127.0.0.1:5500/Project.html"> <p>Projects</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[25%] h-[340px] text-white p-4">
+        <h1 class="text-lg">Contact Details</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p class="my-3">
+          Phone/ WhatsApp: +91-9146201188 <br />
+          Email: info@jcbalabuildcon.com Address: 403,4th Floor,Rivaansh Ikon
+          ,Baner Pan Card Club Road,Pune <br />, Maharashtra-411045
+        </p>
+        <input
+          type="text"
+          class="p-1 w-[100%] sm:w-[50%] sm:inline"
+          placeholder="Email"
+        />
+        <button
+          class="w-[100%] sm:w-8 sm:inline h-8 bg-pink-600 text-white my-2"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- footer end here -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          280: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[130px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[130px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

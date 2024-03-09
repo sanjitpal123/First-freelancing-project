@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="bg-white shadow p-5 fixed top-[0] z-[1] overflow-hidden box-border w-screen  lg:flex lg:justify-between">
+        <div class="flex justify-between items-center overflow-hidden sm:px-[20px]">
+            <span> <img src="logo.png" class="w-[100px]"></span>
+            <span class="text-3xl cursor-pointer lg:hidden block ">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+    
+        </div>
+        <ul class=" flex flex-col justify-center over sm:px-[20px] items-center gap:-[30px] lg:flex  lg:flex-row lg:items-center lg:justify-center  lg:z-auto lg:static absolute  bg-white w-full left-[0] lg:w-auto lg:py-0 lg:py-8 md:pl-0 pl-7 lg:opacity-100 opacity-0 left-[-400px] transition-all case-in duration-500 ">
+            <a href="http://127.0.0.1:5500/index.html" class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0">
+                <li>Home </li>
+            </a>
+            <a href="http://127.0.0.1:5500/About.html" class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0">
+                <li>About Us</li>
+            </a>
+            <a href="http://127.0.0.1:5500/Project.html" class="text-xl hover:text-[#bd186e]  py-[10px] font-bold lg:py-[0px] font-bold mx-4 md:my-0">
+                <li>Projects </li>
+            </a>
+            <a href="http://127.0.0.1:5500/Service-section.html" class="text-xl hover:text-[#bd186e] text-bold  py-[10px] font-bold lg:py-[0px] mx-4 md:my-0">
+                <li>Services </li>
+            </a>
+            <a href="http://127.0.0.1:5500/career.html" class="text-xl hover:text-[#bd186e] text-bold mx-4  py-[10px] font-bold lg:py-[0px] md:my-0 md:my-0">
+                <li>Careers </li>
+            </a>
+            <a href="http://127.0.0.1:5500/Contact.html" class="text-xl hover:text-[#bd186e] text-bold mx-4  py-[10px] font-bold lg:py-[0px] md:my-0">
+                <li>Contact Us </li>
+            </a>
+            <a href="http://127.0.0.1:5500/Contact.html"> <button class="h-[40px] w-[140px] text-white bg-[#bd186e] font-[Poppins] rounded px-4 py-2 my-[10px]">Get Ready</button></a> 
+        </ul>
+    
+    
+    </nav>
+    <!-- navigation bar ends here -->
+    <div
+class="w-full h-[130px] bg-black text-white border-b-4 mt-[150px] border-grey-700 relative"
+>
+<div
+  class="w-[200px] py-4 top-1 h-[100%] border-b-4 border-pink-700 absolute ml-9"
+>
+  <p class="text-xs text-blue-500 ml-[37px]">
+    <a href="http://127.0.0.1:5500/index.html">HOME</a>
+    <span class="mx-3 text-white">|</span
+    ><span class="text-white">Project</span>
+  </p>
+  <p class="text-3xl mt-3 ml-[37px]">Project</p>
+</div>
+</div>
+
+<div class="sm:w-[80%] w-[95%] p-4 sm:ml-[150px] overflow-hidden">
+    <h2 class="text-orange-700 font-bold mb-2">FEATURE WORKS</h2>
+    <p class="font-bold text-3xl mb-3 ">Our Portfolio</p>
+    <div class="w-[100%] overflow-hidden  "> <button class="px-[20px] py-[4px] bg-pink-700 text-white mr-[12px] text-pink-400">Show all</button><span class="mr-[12px] text-pink-400">Construction Management</span> <span class="mr-[12px] text-pink-400 text-pink-400">Facility Maintanence</span> <span class="mr-[12px] text-pink-400 ">Pavement Preservation</span> <span class="mr-[12px] text-pink-400">Renovation</span> <span class="mr-[12px] text-pink-400">Residental Construction</span> <span class="text-pink-400 leading-10">Site Location</span></div>
+    
+</div>
+
+
+    <div class="w-[100%] h-[100%]  overflow-hidden md:p-8 p-3 mt-[30px]">
+        <div class="md:flex md:gap-[30px] justify-center  overflow-hidden items-center ">
+            <div class="relative  w-[100%] h-[20%] md:w-[40%] md:h-[30%] hover:transform hover:scale-90 transition-transform ease-in-out duration-300">
+                <img class=" w-[100%] h-[100%] md:w-[100%] md:h-[100%] pb-2 md:pb-[15px]" src="image27.jpg" alt="">
+                <div class="w-[180px] h-[50px] md:w-[280px] md:h-[60px] bg-gray-700 text-center absolute top-20 left-0 md:top-25 md:left-0">
+                    <h1 class= " relative  text-white pt-3 md:text-md text-sm ">Construction management </h1>
+                    <h2 class="bg-pink-600 text-white md:inline  absolute md:top-10 md:left-12 left-1 top-8 py-2 px-3 text-xs">construction management</h2>
+                </div>
+            </div>
+            <div class=" relative w-[100%] h-[25%] md:w-[40%] md:h-[20%]  hover:transform hover:scale-90 transition-transform ease-in-out duration-300">
+                <img class="w-[100%] h-[100%] pb-2 md:w-[100%] md:h-[100%]" src="image28.jpg" alt="">
+                <div class="w-[180px] h-[50px] md:w-[240px] md:h-[60px] bg-gray-700 text-center absolute top-20 left-0 md:top-25 md:left-0">
+                    <a href="#"><h1 class= " relative  text-white pt-3 md:text-md text-sm ">Pavement preservation </h1></a>
+                    <a href="3"><h2 class="bg-pink-600 text-white inline absolute  md:top-10 md:left-12 left-3 top-8 py-2 px-3 text-xs">Pavement preservation</h2></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 md:flex md:gap-[30px] justify-center items-center">
+            <div class="relative w-[100%] h-[20%] md:w-[40%] md:h-[50vh] hover:transform hover:scale-90 transition-transform ease-in-out duration-300">
+                <img class="w-[100%] h-[100%] md:w-[100%] md:h-[100%] pb-2 mb-0" src="image29.jpg" alt="">
+                <div class="w-[180px] h-[60px] bg-gray-700 text-center absolute md:top-25 md:left-0 top-20">
+                    <a href="#"><h1 class= " relative  text-white pt-3 text-sm ">Renovation </h1></a>
+                    <a href="#"><h2 class="bg-pink-600 text-white inline absolute top-10 left-12 py-2 px-3 text-xs">Renovation</h2></a>
+                </div>
+            </div>
+            <div class="relative w-[100%] h-[20%] md:w-[40%] md:h-[50vh] hover:transform hover:scale-90 transition-transform ease-in-out duration-300">
+                <img class="w-[100%] h-[100%] md:w-[100%] md:h-[100%]" src="image30.jpg" alt="">
+                <div class="w-[180px] h-[60px] bg-gray-700 text-center absolute md:top-25 md:left-0 top-20 left-0">
+                    <a href="#"><h1 class= " relative  text-white pt-3 text-sm ">Site Location</h1></a>
+                    <a href="#"><h2 class="bg-pink-600 text-white inline absolute top-10 left-10 py-2 px-3 text-xs">Site Location</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer starts from here -->
+    <div
+      class="bg-slate-700 w-full h-50% p-8 sm:flex overflow-hidden sm:justify-between sm:flex-wrap box-border"
+    >
+      <div
+        class="h-84 w-[100%] sm:w-[23%] flex justify-center align-center flex-col text-white mb-4"
+      >
+        <div
+          class="w-full h-full flex justify-center align-center sm:flex sm:justify-start"
+        >
+          <img src="logo-img.jpg" class="w-24 h-28" alt="" />
+        </div>
+        <div class="sm:text-left text-center">
+          <p class="my-3">
+            jay chand bala excels in construction with timely, substainable
+            projects.Their skilled team ensure customer satisfaction through
+            transparent communication, making them industry-trusted
+          </p>
+        </div>
+        <div
+          class="w-full h-full flex justify-center align-center gap-2 sm:flex sm:justify-start"
+        >
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-whatsapp w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="w-[100%] sm:w-[20%] h-[280px] text-white p-4">
+        <h1 class="text-lg">Quicklinks</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p>Home</p>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <p>About-Us</p>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <p>Contact-Us</p>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <p>Services</p>
+      </div>
+      <div class="w-[100%] sm:w-[20%] h-[260px] text-white p-4">
+        <h1 class="text-lg">Company</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p>Privacy Policy</p>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <p>Careers</p>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <p>Projects</p>
+      </div>
+      <div class="w-[100%] sm:w-[25%] h-[340px] text-white p-4">
+        <h1 class="text-lg">Contact Details</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p class="my-3">
+          Phone/ WhatsApp: +91-9146201188 <br />
+          Email: info@jcbalabuildcon.com Address: 403,4th Floor,Rivaansh Ikon
+          ,Baner Pan Card Club Road,Pune <br />, Maharashtra-411045
+        </p>
+        <input
+          type="text"
+          class="p-1 w-[100%] sm:w-[50%] sm:inline"
+          placeholder="Email"
+        />
+        <button
+          class="w-[100%] sm:w-8 sm:inline h-8 bg-pink-600 text-white my-2"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- footer ends here -->
+
+    
+    <div class="bg-slate-700 w-full h-50% p-8 sm:flex sm:justify-between sm:flex-wrap box-border">
+        <div class="h-84 w-[100%] sm:w-[23%] flex justify-center align-center flex-col text-white mb-4 ">
+            <div class="w-full h-full flex justify-center align-center sm:flex sm:justify-start "><img src="logo.png"
+                    class="w-24 h-28" alt=""></div>
+            <div class="sm:text-left text-center">
+                <p class="my-3 ">jay chand bala excels in construction with
+                    timely, substainable projects.Their skilled team ensure customer satisfaction through transparent
+                    communication, making them industry-trusted</p>
+            </div>
+            <div class="w-full h-full flex justify-center align-center gap-2 sm:flex sm:justify-start ">
+                <a href="#"><i class="fa-brands fa-facebook w-8 h-8 text-center text-white bg-pink-600 p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram w-8 h-8 text-center text-white bg-pink-600 p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp  w-8 h-8 text-center text-white bg-pink-600 p-2"></i></a>
+
+            </div>
+        </div>
+
+        <div class="w-[100%] sm:w-[20%] h-[280px]  text-white p-4">
+            <h1 class="text-lg">Quicklinks</h1>
+            <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+            <a href="http://127.0.0.1:5500/index.html"><p>Home</p></a>
+            <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+            <a href="http://127.0.0.1:5500/About.html">  <p>About-Us</p></a>
+            <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+            <a href="http://127.0.0.1:5500/Contact.html"> <p>Contact-Us</p></a> 
+            <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+            <a href="http://127.0.0.1:5500/Service-section.html"><p>Services</p></a>
+        </div>
+        <div class="w-[100%] sm:w-[20%] h-[260px]  text-white p-4">
+            <h1 class="text-lg">Company</h1>
+            <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+           <a href="#">  <p>Privacy Policy </p></a>
+            <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+            <a href="http://127.0.0.1:5500/career.html">  <p>Careers </p></a>
+            <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+          
+            <a href="http://127.0.0.1:5500/Project.html">  <p>Projects</p></a>
+        </div>
+        <div class="w-[100%] sm:w-[25%] h-[340px]  text-white p-4 ">
+            <h1 class="text-lg">
+                Contact Details
+            </h1>
+            <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+            <p class="my-3">Phone/ WhatsApp: +91-9146201188 <br>
+                Email: info@jcbalabuildcon.com
+                Address: 403,4th Floor,Rivaansh Ikon ,Baner Pan Card Club Road,Pune <br>, Maharashtra-411045
+            </p>
+            <input type="text" class="p-1 w-[100%] sm:w-[50%] sm:inline" placeholder="Email">
+            <button class="w-[100%] sm:w-8 sm:inline h-8 bg-pink-600 text-white my-2"><i
+                    class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+
+  <script>
+    function Menu(e) {
+        let list = document.querySelector('ul');
+
+        e.name === 'menu' ? (e.name = "close", list.classList.add('left-[0px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('left-[0px]'), list.classList.remove('opacity-100'));
+    }
+</script>
+</body>
+
+</html>

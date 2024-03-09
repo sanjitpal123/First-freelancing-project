@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+<body class="box-border">
+   
+    <!-- navigation bar -->
+   
+    <nav
+    class="bg-white shadow p-5 fixed top-[0] box-border w-screen z-[1] lg:flex lg:justify-between"
+  >
+    <div class="flex justify-between items-center px-[20px]">
+      <span> <img src="logo.png" class="w-[100px]" /></span>
+      <span class="text-3xl cursor-pointer lg:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    <ul
+      class="flex flex-col justify-center px-[20px] items-center gap:-[30px] lg:flex lg:flex-row lg:items-center lg:justify-center lg:z-auto lg:static absolute bg-white w-full left-[0] lg:w-auto lg:py-0 lg:py-8 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all case-in duration-500"
+    >
+      <a
+        href="http://127.0.0.1:5500/index.html"
+        class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+      >
+        <li>Home</li>
+      </a>
+      <a
+        href="http://127.0.0.1:5500/About.html"
+        class="text-xl py-[10px] lg:py-[0px] font-bold hover:text-[#bd186e] text-bold mx-4 md:my-0"
+      >
+        <li>About Us</li>
+      </a>
+      <a
+        href="http://127.0.0.1:5500/Project.html"
+        class="text-xl hover:text-[#bd186e] py-[10px] font-bold lg:py-[0px] font-bold mx-4 md:my-0"
+      >
+        <li>Projects</li>
+      </a>
+      <a
+        href="http://127.0.0.1:5500/Service-section.html"
+        class="text-xl hover:text-[#bd186e] text-bold py-[10px] font-bold lg:py-[0px] mx-4 md:my-0"
+      >
+        <li>Services</li>
+      </a>
+      <a
+        href="http://127.0.0.1:5500/career.html"
+        class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0 md:my-0"
+      >
+        <li>Careers</li>
+      </a>
+      <a
+        href="http://127.0.0.1:5500/Contact.html"
+        class="text-xl hover:text-[#bd186e] text-bold mx-4 py-[10px] font-bold lg:py-[0px] md:my-0"
+      >
+        <li>Contact Us</li>
+      </a>
+      <a href="http://127.0.0.1:5500/Contact.html">
+        <button
+          class="h-[40px] w-[140px] text-white bg-[#bd186e] font-[Poppins] rounded px-4 py-2 my-[10px]"
+        >
+          Get Ready
+        </button></a
+      >
+    </ul>
+  </nav>
+
+  <!--Hero section start from here-->
+  
+  <div class="w-[100%] mt-[150px] h-[50vh] md:h-[75vh] relative ">
+    <div id="default-carousel" class="relative w-full h-[100%]" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[40vh] md:h-56 overflow-hidden rounded-lg md:h-[100%]">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out text-[#bd186e]" data-carousel-item>
+                <img src="hero-photo-7.avif" class="absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-[-1]" alt="...">
+                <div class="w-full h-full flex flex-col justify-center items-center">
+                    <p class="md:text-3xl  text-[#ff3f00] text-center ">RELIABLE CONSTRUCTION SERVICE</p>
+                    <h5 class="md:text-4xl text-white font-bold text-center mt-2">Jaychand Bala the world of innovation</h5>
+                    <button class="mt-4 px-4 py-2 bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 text-gray-900 dark:text-white rounded-md hover:bg-[#bd186e] focus:outline-none focus:ring-2 focus:ring-red-100 dark:focus:ring-red-400">
+                        <span class="font-bold">Get Started</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="hero-photo5.avif" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="w-full h-full flex flex-col  absolute justify-center items-center">
+                    <p class="md:text-3xl text-[#ff3f00]">RELIABLE CONSTRUCTION SERVICE</p>
+                    <h5 class="md:text-4xl text-white font-bold text-center mt-2">Building Construction and Renovation</h5>
+                    <button class="mt-4 px-4 py-2 bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 text-gray-900 dark:text-white rounded-md hover:bg-[#bd186e] focus:outline-none focus:ring-2 focus:ring-red-100 dark:focus:ring-red-400">
+                        <span class="font-bold">Get Started</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="hero-photo6.avif" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="w-full h-full flex flex-col  absolute justify-center items-center">
+                    <p class="md:text-3xl text-[#ff3f00]">PROJECT MANAGEMENT SERVICE</p>
+                    <h5 class="md:text-4xl text-white font-bold text-center mt-2">Professional Management Services</h5>
+                    <button class="mt-4 px-4 py-2 bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 text-gray-900 dark:text-white rounded-md hover:bg-[#bd186e] focus:outline-none focus:ring-2 focus:ring-red-100 dark:focus:ring-red-400">
+                        <span class="font-bold">Get Started</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+</div>
+
+   
+    
+    <!-- experience / expert section -->
+    <div class="sm:w-[100%] mt-[20px] sm:justify-center sm:flex-row px-[10px] min-h-[40vh]  flex sm:flex-wrap flex-col w-[100%] overflow-hidden box-border bg-[#f4f4f4]">
+
+        <div class="lg:w-[30%] w-[100%]  mb-[10px] ml-[20px] hover:shadow-xl py-[20px] my-[20px] mx-[20px] py-[10px] cursor-pointer px-[10px] transition-shadow ">
+            <h4 class="w-[100%] text-2xl font-bold pt-[10px] px-[10px] lg:px-[0px]">Expertise and Experience</h4>
+            <p class="w-[100%] pt-3 px-[10px] lg:px-[0px] text-[#666666] font-semibold">With years of experience in the construction industry, Jay Chand Bala (JCB) Building Construction has amassed a wealth of knowledge and expertise. Our team’s combined experience allows us to tackle a diverse range of projects with confidence and excellence. Our team provide a good services as per your demand</p>
+            <a href="#" class="text-[#FF3F00] font-bold px-[10px] lg:px-[0px]pt-[20px] ">Read More +</a>
+        </div>
+        <div class="lg:w-[30%] w-[100%] sm:mt-[10px] ml-[20px] mt-[10px] hover:shadow-xl py-[20px] my-[20px] cursor-pointer mx-[20px] py-[10px] px-[10px] transition-shadow">
+            <h4 class="w-[100%] text-2xl font-bold px-[10px] lg:px-[0px]">Quality Craftsmanship</h4>
+            <p class="w-[100%] pt-3 px-[10px] lg:px-[0px] text-[#666666] font-semibold">We take immense pride in our commitment to delivering projects of the highest quality. Our attention to detail and dedication to craftsmanship ensure that every aspect of your project is executed flawlessly, resulting in a finished product that exceeds expectations. Our team will finished the construction as per your demand.
+                </p>
+            <a href="#" class="text-[#FF3F00] pt-2 font-bold px-[10px] lg:px-[0px] pt-[10px]">Read More +</a>
+        </div>
+        <div class="lg:w-[30%] w-[100%] pt-[10px] ml-[20px] hover:shadow-xl py-[20px] my-[20px] cursor-pointer mx-[20px] py-[10px] px-[10px] transition-shadow ">
+            <h4 class="w-[100%] text-2xl font-bold px-[10px] lg:px-[0px] ">Comprehensive Services</h4>
+            <p class=" w-[100%] pt-3 px-[10px]  lg:px-[0px] text-[#666666] font-semibold">At JCBalaBuildCon.com, we offer a full spectrum of construction services, from architectural design to construction management, interior design, renovation, and project consulting. This comprehensive approach streamlines the entire process, offering you a one-stop solution for all your construction needs.</p>
+            <a href="#" class="text-[#FF3F00] pt-2 font-bold px-[10px] lg:px-[0px] pt-[10px]">Read More +</a>
+        </div>
+
+    </div>
+<!-- end here -->
+
+<!--What we  do start from here-->
+
+<div class=" sm:w-[90%]  w-[100%] lg:mx-[100px] z-[-1] relative sm:mx-[50px]  mt-[20px]">
+    <h3 CLASS="font-bold text-[#FF3F00] text-3xl text-center">WHAT WE DO?</h3>
+    <h2 class="font-bold text-black-900 text-2xl text-center mb-[30px]">Our Services</h2>
+
+    <div class="swiper mySwiper w-[100%]  h-[100%] ">
+        <div class="swiper-wrapper flex mb-[30px]">
+            <div class="swiper-slide md:w-[50%] lg:w-[30%] sm:w-[50%] w-[100%]    flex flex-col justify-center  items-center  hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+                <img src="construct-man-ph.avif" class="w-[100px]">
+                <h4 class="font-bold text-center py-[10px] text-1xl lg:text-2xl">Construction Management</h4>
+                <div class="px-[10px]   w-[90%] md:w-[100%] text-[#666666]  font-medium xl:w-[100%]  box-border text-center 2xl:w-[80%]">Construction management ensures efficient project execution by coordinating planning, scheduling, and collaboration for timely, quality completion </div>
+                <a href="#" class="text-[#FF3F00] font-bold mt-[10px] ">Read More+</a>
+            </div>
+
+            <div class="swiper-slide md:w-[50%] lg:w-[30%]  sm:w-[50%] w-[100%]  mt-[30px]  flex flex-col justify-center  items-center hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+                <img src="image25.jpg" class="w-[100px]">
+                <h4 class="font-bold  lg:text-2xl text-1xl py-[10px]">Residential Construction</h4>
+                <p class=" w-[90%]  md:w-[100%] box-border font-medium  text-[#666666] text-center 2xl:w-[80%]">Residential construction involves building homes, emphasizing structural integrity, aesthetics, and client satisfaction through meticulous planning and execution.  </p>
+                <a href="#" class="text-[#FF3F00] mt-[10px] mb-[10px] font-bold">Read More+</a>
+            </div>
+
+            <div class="swiper-slide  md:w-[50%] lg:w-[30%] sm:w-[50%] w-[100%]   flex flex-col justify-center  items-center hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+                <img src="facilities-photo.png" class="w-[100px]">
+                <h4 class="font-bold text-1xl lg:text-2xl py-[10px]">Facility Maintenece</h4>
+                <p class="px-[10px] w-[90%]   md:w-[100%] font-medium  text-[#666666] box-border text-center 2xl:w-[80%]">Facility maintenance ensures optimal operation by regularly inspecting, repairing, and preserving building systems and infrastructure.</p>
+                <a href="#" class="text-[#FF3F00] mt-[10px] mb-[10px] font-bold">Read More+</a>
+            </div>
+            
+        <div class="swiper-slide md:w-[50%] lg:w-[30%] sm:w-[50%] w-[100%] pb-[20px]  flex flex-col justify-center  items-center hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+            <img src="location-pho.png" class="w-[100px]">
+            <h4 class="font-bold text-1xl lg:text-2xl py-[10px]">Site Location </h4>
+            <p class="px-[10px] w-[90%]  py-[10px]  text-[#666666] font-medium md:w-[100%] box-border text-center 2xl:w-[80%]">Site location is critical, considering resources, transportation, labor, and market access for optimal efficiency and success.</p>
+            <a href="#" class="text-[#FF3F00] mt-[10px] mb-[10px] font-bold ">Read More+</a>
+        </div>
+
+
+        <div class="swiper-slide md:w-[50%] lg:w-[30%] sm:w-[50%] w-[100%] pb-[20px]  flex flex-col justify-center  items-center hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+            <img src="image31.jpg" class="w-[100px]">
+            <h4 class="font-bold text-1xl lg:text-2xl py-[10px]">Pavement Preservation</h4>
+            <p class="px-[10px] w-[90%] md:w-[100%] text-[#666666] font-medium box-border py-[10px] text-center 2xl:w-[80%]">Pavement preservation prolongs road life through cost-effective treatments, preventing deterioration and ensuring long-term durability .</p>
+            <a href="#" class="text-[#FF3F00] pt-[10px] font-bold">Read More+</a>
+        </div>
+
+        <div class="swiper-slide md:w-[50%] lg:w-[30%] sm:w-[50%] w-[100%]  pb-[20px]  flex flex-col justify-center  items-center hover:shadow-xl py-[20px] my-[20px] transition-shadow">
+            <img src="image25.jpg" class="w-[100px]">
+            <h4 class="font-bold text-1xl lg:text-2xl py-[10px]">Renovation </h4>
+            <p class="px-[10px] w-[90%] md:w-[100%] text-[#666666] font-medium  box-border text-center  2xl:w-[80%]">Renovation transforms structures into living narratives of modernity and purpose. It's an orchestrated symphony of rejuvenating design.  </p>
+            <a href="#" class="text-[#FF3F00] pt-[10px]  pb-[10px] font-bold">Read More+</a>
+        </div>
+
+
+
+        </div>
+        <div class="swiper-pagination "></div>
+    </div>
+</div>
+
+
+<!--What we do end here-->
+<!-- Who are we start from her -->
+    <div class="w-full sm:flex sm:justify-center bg-[#f4f4f4] sm:align-center  min-h-[100vh] lg:h-[100vh]  sm:flex-wrap gap-10 my-5 box-border" >
+        <div class="lg:w-[40%] w-[100%] h-[100%]  flex justify-center ">
+            <img class="w-[90%] lg:w-[90%] h-[100%] py-10" src="image1.jpeg" alt="">
+        </div>
+        <div class="lg:w-[45%] mx-[20px]  lg:w-[50%]  w-[90%] h-[100%] pt-10 px-4">
+            <p class="text-pink-500 text-sm font-bold 2xl:text-1xl">WHO WE ARE</p>
+            <p class="text-black  text-2xl font-bold mb-5 2xl:text-3xl ">More About Jay chand bala</p>
+            <p class="mb-5 2xl:text-1xl">Jay chand bala offers a wide range of services including architectural design, construction management, interior design, renovation, and project consulting. We specialize in residential, commercial, and retail projects</p>
+            <p class="2xl:text-1xl">With years of experience in the construction industry, Jay Chand Bala (JCB) Building Construction has amassed a wealth of knowledge and expertise. Our team’s combined experience allows us to tackle a diverse range of projects with confidence and excellence.
+                <br><br>
+            </p>
+            <p class="2xl:text-1xl">We take immense pride in our commitment to delivering projects of the highest quality. Our attention to detail and dedication to craftsmanship ensure that every aspect of your project is executed flawlessly, resulting in a finished product that exceeds expectations. Our team will finished the construction as per your demand.</p>
+            <h3 class="text-pink-500 text-sm font-bold my-5"><a href="#">MORE+</a> </h3>
+            <div class="w-full p-1 flex  justify-between items-center gap-[20px] flex-wrap lg:flex-row lg:w-full my-3">
+                <div class="w-[40%] text-center lg:w-[22%] ">
+                    <p class="font-bold sm:text-4xl md:font-extrabold ">10+</p>
+                    <p class="text-xs mt-1">Bussiness Years</p>
+                </div> 
+                <div class="w-[40%] text-center lg:w-[22%]">
+                    <p class="font-bold sm:text-4xl md:font-extrabold">240+</p>
+                    <p class="text-xs mt-1">Satisfied Years</p>
+                </div>
+                <div class="w-[40%] text-center lg:w-[22%]">
+                    <p class="font-bold sm:text-4xl md:font-extrabold">2000+</p>
+                    <p class="text-xs mt-1">Successfull Cases</p>
+                </div>
+                <div class="w-[40%] text-center lg:w-[22%]">
+                    <p class="font-bold sm:text-4xl md:font-extrabold">130+</p>
+                    <p class="text-xs mt-1">Pro Consultants</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+     <!-- Extra work section start from here -->
+<div class="w-[100%]  min-h-[40v] flex justify-center">
+    <div class="w-[100%] min-h-[40vh] my-[20px]  overflow-hidden lg:h-[80vh]  lg:flex lg:justify-centerlg:align-center  ">
+        <div class="w-[100% ] h-[100%] p-5 bg-red-400 text-white lg:w-[50%]">
+            <h4 class="text-red-700 text-sm font-bold 2xl:text-3xl">EXTRA WORK</h1>
+            <h1 class="text-2xl font-bold mb-2 2xl:text-3xl">Special Services</h1>
+            <p class="2xl:text-1xl">Look no further than the esteemed construction powerhouse, Jay Chand Bala. Renowned for their unparalleled expertise, boundless creativity, and unwavering commitment to excellence, Jay Chand Bala stands as a paragon of innovation in the construction landscape. With an impressive track record of delivering extraordinary projects, they consistently manifest breathtaking architecture that not only captivates the eye but also fulfills the aspirations of their clients</p>
+            <p class="2xl:text-1xl">With Jay Chand Bala at the helm, you can expect nothing short of a masterpiece – a testament to their unparalleled skill, unrelenting passion, and a relentless pursuit of perfection.</p>
+            <p class="text-red-700 text-sm font-bold mt-2 2xl:text-3xl ">Get a Quote+</p>
+        </div>
+        <div class="lg:w-[50%]">
+            <div>
+                <img class="w-[100%] lg:h-[80vh]   lg:block  hidden " src="image8.jpg" alt="">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    
+</div>
+
+
+
+<!--Review section start from here-->    
+    <div class="w-[100%] relative z-[-1] flex justify-center mb-[30px] mr-[20px]">
+        
+        <div class="sm:w-[80%] w-[90%] mx-[10px] ">
+        <p class="text-[#FF3F00] font-bold">WHAT THEY SAY</p>
+        <h2 class="sm:text-2xl font-bold text-1xl ">Google My Business Reviews</h2>
+        <div class="sm:flex flex-wrap sm:flex-row sm:flex-nowrap">
+            <div class="sm:w-[20%] w-[100%] justify-center flex-wrap items-center mt-[30px]">
+                <div>
+                    <img src="image14.jpg" class="w-[50px] h-[50px] rounded-full">
+                </div>
+                <div class="ml-[10px]  sm:w-[200px]  mb-[10px] w-[100%]">
+
+                    <span class="font-bold">J C Bala Buildcon</span>
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <span class="font-bold text-2xl mr-[3px] text-[#FFD700]">5.0</span>
+                            <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                    class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                    class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                    class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                    class="fa-solid fa-star text-[#FFD700]"></i>
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <p class="text-[#555 ] font-medium mt-[5px] mb-[4px]">Based on 6 reviews </p>
+                        <span><img src="image26.jpg" class="w-[150px]"></span>
+                        <button class="bg-blue-700 px-[10px] mt-[10px] rounded-xl text-white"><a href="#">Review us on
+                                <img src="Google_Icons-09-512.webp" class="h-[30px] inline"></a></button>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!--Slider of review start from here -->
+            <div class=" sm:w-[70%]  w-[100%] lg:ml-[150px]  sm:ml-[100px]">
+
+                <div class="swiper mySwiper2 w-[100%] h-[100%]  ">
+                    <div class="swiper-wrapper flex mb-[30px]">
+
+
+                        <div
+                            class="swiper-slide w-[30%] pb-[20px]  flex flex-col h-[300px] bg-gradient-to-br from-gray-100 to-gray-100 ">
+                            <div class="flex  justify-between gap-[10px] ml-[20px] mt-[30px]">
+                                <div class="flex gap-[20px]">
+                                    <img src="image22.jpg" class="w-[60px] h-[60px] pt-[30p]">
+                                    <a href="#" class="font-bold">Jaychand Bala</a>
+                                </div>
+                                <div>
+                                    <img src="Google_Icons-09-512.webp" class="w-[30px] h-[30px] mt-[-20px]">
+                                </div>
+
+                            </div>
+                            <div class="ml-[100px] mt-[-30px]">
+                                <p>6 months ago</p>
+                            </div>
+                            <div class="star ml-[40px] mt-[20px]">
+                                <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div
+                            class="swiper-slide w-[30%] pb-[20px] h-[300px] flex flex-col bg-gradient-to-br from-gray-100 to-gray-100">
+                            <div class="flex  justify-between gap-[10px] ml-[20px] mt-[30px]">
+                                <div class="flex gap-[20px]">
+                                    <img src="image21.jpg" class="w-[60px] h-[60px] pt-[30p]">
+                                    <a href="#" class="font-bold">Sanjit Pal</a>
+                                </div>
+                                <div>
+                                    <img src="Google_Icons-09-512.webp" class="w-[30px] h-[30px] mt-[-20px]">
+                                </div>
+
+                            </div>
+                            <div class="ml-[100px] mt-[-30px]">
+                                <p>9 months ago</p>
+                            </div>
+                            <div class="star ml-[40px] mt-[20px]">
+                                <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i>
+                                </span>
+                            </div>
+                            <div class="w-[80%] ml-[30px]">
+                                <p>this company are working on more project which in running in mharastra & other
+                                    state.This Company have good work </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="swiper-slide w-[30%] pb-[20px]  flex flex-col h-[300px]  bg-gradient-to-br from-gray-100 to-gray-100">
+                            <div class="flex  justify-between gap-[10px] ml-[20px] mt-[30px]">
+                                <div class="flex gap-[20px]">
+
+                                    <img src="image20.jpg" class="w-[60px] h-[60px] pt-[30p]">
+                                    <a href="#" class="font-bold">Srijal Pal</a>
+                                </div>
+                                <div>
+                                    <img src="Google_Icons-09-512.webp" class="w-[30px] h-[30px]  mt-[-20px]">
+                                </div>
+
+
+                            </div>
+                            <div class="ml-[100px] mt-[-30px]">
+                                <p>8 months ago</p>
+                            </div>
+                            <div class="star ml-[40px] mt-[20px]">
+                                <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div
+                            class="swiper-slide w-[20%] pb-[20px]  flex flex-col h-[300px] bg-gradient-to-br from-gray-100 to-gray-100">
+                            <div class="flex justify-between  gap-[10px] ml-[20px] mt-[30px]">
+                                <div class="flex gap-[20px]">
+                                    <img src="image19.jpg" class="w-[60px] h-[60px] pt-[30p]">
+                                    <a href="#" class="font-bold">Ajay Biswas</a>
+                                </div>
+                                <div>
+                                    <img src="Google_Icons-09-512.webp" class="w-[30px] h-[30px]  mt-[-20px]">
+                                </div>
+
+
+                            </div>
+                            <div class="ml-[100px] mt-[-30px]">
+                                <p>11 months ago</p>
+                            </div>
+                            <div class="star ml-[40px] mt-[20px]">
+                                <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i>
+                                </span>
+                            </div>
+                            <div class="w-[80%] ml-[30px]">
+                                <p>Many more projects are going on all over maharashtra & other state.. nice company..
+                                    professional staff..good management </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="swiper-slide w-[30%] pb-[20px]  flex flex-col h-[300px] bg-gradient-to-br from-gray-100 to-gray-100">
+                            <div class="flex justify-between  gap-[10px] ml-[20px] mt-[30px]">
+                                <div class="flex gap-[20px]">
+                                    <img src="image21.jpg" class="w-[60px] h-[60px] pt-[30p]">
+                                    <a href="#" class="font-bold">Rajesh Kumar</a>
+                                </div>
+
+                                <img src="Google_Icons-09-512.webp" class="w-[30px] h-[30px]  mt-[-20px]">
+
+                            </div>
+                            <div class="ml-[100px]  mt-[-30px]">
+                                <p>8 months ago</p>
+                            </div>
+                            <div class="star ml-[40px] mt-[20px]">
+                                <span><i class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700] "></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i> <i
+                                        class="fa-solid fa-star text-[#FFD700]"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="swiper-pagination "></div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+           
+
+        </div>
+    </div>
+    
+    <!-- footer start here -->
+   
+    <div
+      class="bg-slate-700 w-full h-50% p-8 sm:flex sm:justify-between sm:flex-wrap box-border"
+    >
+      <div
+        class="h-84 w-[100%] sm:w-[23%] flex justify-center align-center flex-col text-white mb-4"
+      >
+        <div
+          class="w-full h-full flex justify-center align-center sm:flex sm:justify-start"
+        >
+          <img src="logo.png" class="w-24 h-28" alt="" />
+        </div>
+        <div class="sm:text-left text-center">
+          <p class="my-3">
+            jay chand bala excels in construction with timely, substainable
+            projects.Their skilled team ensure customer satisfaction through
+            transparent communication, making them industry-trusted
+          </p>
+        </div>
+        <div
+          class="w-full h-full flex justify-center align-center gap-2 sm:flex sm:justify-start"
+        >
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-whatsapp w-8 h-8 text-center text-white bg-pink-600 p-2"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="w-[100%] sm:w-[20%] h-[280px] text-white p-4">
+        <h1 class="text-lg">Quicklinks</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="http://127.0.0.1:5500/index.html"><p>Home</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/About.html"> <p>About-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Contact.html"> <p>Contact-Us</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/Service-section.html"><p>Services</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[20%] h-[260px] text-white p-4">
+        <h1 class="text-lg">Company</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <a href="#"> <p>Privacy Policy</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+        <a href="http://127.0.0.1:5500/career.html"> <p>Careers</p></a>
+        <div class="w-full h-[1px] border-t-0 bg-gray-600 my-2"></div>
+
+        <a href="http://127.0.0.1:5500/Project.html"> <p>Projects</p></a>
+      </div>
+      <div class="w-[100%] sm:w-[25%] h-[340px] text-white p-4">
+        <h1 class="text-lg">Contact Details</h1>
+        <div class="w-12 h-1 border-t-0 bg-pink-600 my-3"></div>
+        <p class="my-3">
+          Phone/ WhatsApp: +91-9146201188 <br />
+          Email: info@jcbalabuildcon.com Address: 403,4th Floor,Rivaansh Ikon
+          ,Baner Pan Card Club Road,Pune <br />, Maharashtra-411045
+        </p>
+        <input
+          type="text"
+          class="p-1 w-[100%] sm:w-[50%] sm:inline"
+          placeholder="Email"
+        />
+        <button
+          class="w-[100%] sm:w-8 sm:inline h-8 bg-pink-600 text-white my-2"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- footer end here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+                480: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+    
+    <script>
+        function Menu(e) {
+          let list = document.querySelector("ul");
+  
+          e.name === "menu"
+            ? ((e.name = "close"),
+              list.classList.add("top-[130px]"),
+              list.classList.add("opacity-100"))
+            : ((e.name = "menu"),
+              list.classList.remove("top-[130px]"),
+              list.classList.remove("opacity-100"));
+        }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    
+</body>
+</html>
